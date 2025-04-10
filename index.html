@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CompraTech - Loja de Eletrônicos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>CompraTech</h1>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a id="cart-button" href="#">Carrinho (0)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre a CompraTech</h2>
+      <p>Somos especialistas em eletrônicos modernos, oferecendo os melhores produtos de tecnologia do mercado com preços acessíveis e qualidade garantida.</p>
+    </section>
+
+    <section id="produtos">
+      <h2>Nossos Produtos</h2>
+      <ul>
+        <li>
+          <h3>Smartphone XYZ</h3>
+          <p>Desempenho rápido, tela AMOLED e bateria duradoura.</p>
+          <p><strong>Preço: R$ 1.999,90</strong></p>
+          <button onclick="addToCart('smartphone-xyz')">Adicionar Smartphone ao Carrinho</button>
+        </li>
+        <li>
+          <h3>Notebook UltraPro</h3>
+          <p>Processador Intel i7, 16GB RAM, SSD de 512GB. Ideal para trabalho e jogos.</p>
+          <p><strong>Preço: R$ 4.499,00</strong></p>
+          <button onclick="addToCart('notebook-ultrapro')">Adicionar Notebook ao Carrinho</button>
+        </li>
+        <li>
+          <h3>Fone Bluetooth AirBeats</h3>
+          <p>Qualidade de som excepcional com cancelamento de ruído ativo.</p>
+          <p><strong>Preço: R$ 299,90</strong></p>
+          <button onclick="addToCart('fone-airbeats')">Adicionar Fone ao Carrinho</button>
+        </li>
+        <li>
+          <h3>Smartwatch LifeFit</h3>
+          <p>Monitora saúde, batimentos cardíacos e possui integração com o celular.</p>
+          <p><strong>Preço: R$ 799,90</strong></p>
+          <button onclick="addToCart('smartwatch-lifefit')">Adicionar Smartwatch ao Carrinho</button>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contato">
+      <h2>Entre em Contato</h2>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" required></textarea>
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CompraTech. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
